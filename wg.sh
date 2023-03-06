@@ -8,7 +8,7 @@ opt=$1
 
 # Define the location/name of the sqlite3 database file
 dbfile="foo.db"
-cmd="sqlite3 -header -table $dbfile "
+cmd="sqlite3 -echo -header -table $dbfile "
 
 # Check of opt is a number (==> memidnum) or not (==> lastname) or <null>
 if [[ "$opt" =~ ^[0-9]+$ ]]
@@ -16,7 +16,7 @@ then
     opt=' and MEMIDNUM='$opt' '
 elif [ -n "$opt" ]
 then
-    opt=' and LastName like "'$opt'" '
+    opt=' and LastName like "%'$opt'%" '
 else
     opt=''
 fi
