@@ -1,10 +1,9 @@
 /* chairs.sql */
 .trace stdout
 .print Complete history of committee chairs
-.print
 
-select * from DevSummary where RoleID in (10) order by LastName,RoleStart;
+--select * from DevSummary where RoleID in (10,15) order by LastName,RoleStart;
 
-select * from DevSummary where RoleID in (10) order by GroupID,RoleStart,LastName;
+select FirstName,LastName,MEMIDNUM,GroupName,GroupID,Role,RoleID,RoleStart,RoleEnd from DevSummary where RoleID in (10,15) order by GroupID,RoleStart,LastName;
 
 .trace off
