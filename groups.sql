@@ -1,6 +1,6 @@
 /* groups.sql */
 .trace stdout
-.print Dump contents of the smallish auxiliary tables: groupNames, roles, authIDs
+.print All of the DESC-defined groups
 
 .print
 .print Management entities

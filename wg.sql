@@ -5,8 +5,12 @@
 --select FirstName,LastName,MEMIDNUM,GroupName,GroupID,RoleStart,RoleEnd from DevSummary where RoleID in (9) order by LastName,RoleStart;
 
 .print
-.print Working Group Conveners
-select FirstName,LastName,MEMIDNUM,GroupName,GroupID,RoleStart,RoleEnd from DevSummary where RoleID in (9) and GroupID > 99 and GroupID < 200 order by GroupID,RoleStart;
+.print Working Group Conveners (active groups)
+select FirstName,LastName,MEMIDNUM,GroupName,GroupID,RoleStart,RoleEnd from DevSummary where RoleID in (9) and GroupID > 99 and GroupID < 200 and GroupEnd = '' order by GroupID,RoleStart;
+
+.print
+.print Working Group Conveners (inactive groups)
+select FirstName,LastName,MEMIDNUM,GroupName,GroupID,RoleStart,RoleEnd from DevSummary where RoleID in (9) and GroupID > 99 and GroupID < 200 and GroupEnd != '' order by GroupID,RoleStart;
 
 .print
 .print Topical Team Conveners
