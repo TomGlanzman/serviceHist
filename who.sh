@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # who.sh - Trivial script to dump out history for a specific person
-#  $ bash wg.sh [lastname | memidnum]
+#  $ bash wg.sh [lastname | firstname | memidnum]
 #
 
 opt=$1
@@ -12,7 +12,7 @@ then
     opt=' where MEMIDNUM='$opt' '
 elif [ -n "$opt" ]
 then
-    opt=' where LastName like "%'$opt'%" '
+    opt=' where LastName like "%'$opt'%" or FirstName like "%'$opt'%"'
 else
     opt=''
 fi

@@ -40,3 +40,15 @@ CREATE VIEW CurrentSummary(FirstName,LastName,Role,GroupName,Abbrv,RoleStart,Aut
    	      join DESC_ORG_ROLES R on (R.ROLEID=H.ROLEID)
    	      join DESC_ORG_AUTHORITIES A on (G.AUTHID=A.AUTHID)
 	      where H.ROLEEND='';
+
+
+DROP VIEW IF EXISTS ManagementTeam;
+CREATE VIEW ManagementTeam(FirstName,LastName,Role,RoleID,GroupName,RoleStart,RoleEnd,Notes)
+       AS
+       select M.FIRSTNAME,M.LASTNAME,R.ROLENAME,R.ROLEID,G.GROUPNAME,H.ROLESTART,H.ROLEEND,H.NOTES from DESC_SERVICE_HIST H
+       	      join UM_MEMBER M on (M.MEMIDNUM=H.MEMIDNUM)
+   	      join DESC_ORG_GROUPS G on (G.GROUPID=H.GROUPID)
+   	      join DESC_ORG_ROLES R on (R.ROLEID=H.ROLEID)
+   	      join DESC_ORG_AUTHORITIES A on (G.AUTHID=A.AUTHID)
+	      where G.GROUPID in (20,21,22,23,24,25,26)
+	      order by H.ROLESTART,R.ROLEID,M.LASTNAME;

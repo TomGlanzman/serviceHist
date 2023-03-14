@@ -24,5 +24,11 @@
 .output smallTables.txt
 .read smallTables.sql
 
+.output coords.txt
+.read coords.sql
+
+.output ombuds.txt
+.read ombuds.sql
+
 .output
 
