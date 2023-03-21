@@ -778,7 +778,7 @@
 3602,Michelle,Gower
 2366,Donna,Grabowski
 636,Norman,Graf
-546,Norman	,Graf        	
+546,Norman,Graf
 116,Kevin ,Graham
 621,Mathew,Graham
 3072,Melissa,Graham
@@ -1075,7 +1075,7 @@
 2378,Robert,Kehoe
 2231,Heather,Kelly
 2759,Patrick,Kelly
-547,Heather,Kelly   	
+547,Heather,Kelly
 548,Michael,Kelsey
 5100,Lee,Kelvin
 2531,Athol,Kemball
@@ -1690,7 +1690,7 @@
 2370,Mariana,Penna-Lima
 3035,Will,Percival
 761,Olivier,Perdereau
-554,Joseph 	,Perl 	
+554,Joseph,Perl
 833,Saul,Perlmutter
 8241,Allan,Perna
 3734,Laurence,Perreault-Levasseur
