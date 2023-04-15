@@ -30,5 +30,11 @@
 .output ombuds.txt
 .read ombuds.sql
 
+.output servers.txt
+.read servers.sql
+
+.output schema.txt
+.schema
+
 .output
 
