@@ -26,4 +26,8 @@ select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from Management
 .print Sixth Administration
 select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart > '2021-06-30' and RoleStart < '2023-07-01' order by RoleID ;
 
+.print
+.print Seventh Administration
+select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart > '2023-06-30' and RoleStart < '2025-07-01' order by RoleID ;
+
 .trace off
