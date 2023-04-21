@@ -12,6 +12,74 @@ import datetime
 import argparse
 #import matplotlib.pyplot as plt
 
+
+
+######################
+# UTILITY FUNCTIONS
+######################
+
+def getSQLfromFile(filename):
+    ## Read text file of sql and produce clean list of individual sql commands
+    with open(filename,'r') as f:
+        sql=f.read()
+        pass
+    #print(f'sql from file:\n{sql}\n\n=============================\n\n')    ########## DEBUG ONLY #############
+    
+    ## Remove SQL /* comments */ from file content
+    while True:
+        start=sql.find('/*')
+        end=sql.find('*/')+2
+        if start == -1: break
+        #print(f'removing: {sql[start:end]}')
+        sql=sql[:start]+sql[end:]
+        pass
+    
+    ## Remove SQL "--" (whole line, including \n) comments from file content
+    while True:
+        start=sql.find('\n--')
+        if start == -1: break
+        start += 1
+        end=sql.find('\n',start)+1
+        #print(f'removing: {sql[start:end]}')
+        sql=sql[:start]+sql[end:]
+        pass
+    
+    ## Remove SQL "--" inline (not including \n) comments from file content
+    while True:
+        start=sql.find('--')
+        if start == -1: break
+        end=sql.find('\n',start)
+        #print(f'removing: {sql[start:end]}')
+        sql=sql[:start]+sql[end:]
+        pass
+    
+    ## Remove special sqlite directives (entire lines beginning with ".")
+    while True:
+        start = sql.find('\n.')
+        if start == -1: break
+        start = start + 1
+        end = sql.find('\n',start)+1
+        #print(f'removing: {sql[start:end]}')
+        sql=sql[:start]+sql[end:]
+        pass
+    
+    ## Must split multiple sql commands into separate python sqlite3 calls
+    sqlList = sql.split(';')
+    sqlList = sqlList[:-1]   # remove last (empty) element in list
+    #print(f'There were {len(sqlList)} sql commands found in the file')
+    return sqlList
+
+
+
+
+
+##########
+# MAIN
+##########
+
+
+# Read command line options
+
 reportTypes = ['cc','mgmt','membership','pubboard']
 
 parser = argparse.ArgumentParser(description='Create text reports based on DESC serviceHist database',
@@ -28,15 +96,13 @@ parser.add_argument('-f','--file',default='./foo.db',help='Name of sqlite databa
 
 args = parser.parse_args()
 
-print(f'args = {args}')
 
-
+# Define parameters
 
 dbFile = args.file  # Name of sqlite3 database file containing serviceHist data
-
 tblfmt = 'psql'   # Used by tabulate to specify output format
-
 cols1="FirstName,LastName,GroupName,Role,RoleStart,RoleEnd"
+
 sql={'cc':f'select {cols1} from DevSummary where GroupID=1 order by RoleStart;',
      'membershipComm':f'select {cols1} from DevSummary where GroupID=7 order by RoleStart;'
      }
@@ -48,10 +114,46 @@ t=f'''
   order by LastName;
 '''
 
-# Initialization
+
+# Initialize database connection
 
 con = sqlite3.connect(dbFile,timeout=30) ## connect to sqlite3 DB file
 cur = con.cursor()                       ## create a 'cursor'
+
+
+
+# Produce requested report
+
+repType = args.reportType
+if repType not in reportTypes:
+    print(f'Unrecognized report type: {repType}')
+    print(f'Bye...')
+    sys.exit()
+
+if repType == 'mgmt':
+    print(f'mgmt report')
+    sqlList=getSQLfromFile('mgmt.sql')
+    cycle=1
+    for sql in sqlList:
+        print(f'Management cycle {cycle}:')
+        cycle+=1
+        cur.execute(sql)
+        r=cur.fetchall()
+        print(tabulate(r,tablefmt=tblfmt))
+        pass
+    
+elif repType == 'cc':
+    print(f'cc report')
+else:
+    print(f'Unimplemented report type: {repType}')
+    pass
+
+
+# DONE
+
+sys.exit()
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 .print
 .print First Administration (one year)
-select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart < '2013-07-01' order by RoleID ;
+select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart < '2013-07-01' order by RoleID ; -- inline comment
 
 .print
 .print Second Administration
