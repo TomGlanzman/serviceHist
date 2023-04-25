@@ -33,6 +33,9 @@
 .output servers.txt
 .read servers.sql
 
+.output everyone.txt
+.read everyone.sql
+
 .output schema.txt
 .schema
 

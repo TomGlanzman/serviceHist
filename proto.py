@@ -19,13 +19,13 @@ import argparse
 ######################
 
 def getSQLfromFile(filename):
-    ## Read text file of sql and produce clean list of individual sql commands
+    ## Read text file of sql and produce clean LIST of individual sql commands
     with open(filename,'r') as f:
         sql=f.read()
         pass
     #print(f'sql from file:\n{sql}\n\n=============================\n\n')    ########## DEBUG ONLY #############
     
-    ## Remove SQL /* comments */ from file content
+    ## Remove SQL /* comments */
     while True:
         start=sql.find('/*')
         end=sql.find('*/')+2
@@ -34,7 +34,7 @@ def getSQLfromFile(filename):
         sql=sql[:start]+sql[end:]
         pass
     
-    ## Remove SQL "--" (whole line, including \n) comments from file content
+    ## Remove SQL "--" (whole line, including \n) comments
     while True:
         start=sql.find('\n--')
         if start == -1: break
@@ -44,7 +44,7 @@ def getSQLfromFile(filename):
         sql=sql[:start]+sql[end:]
         pass
     
-    ## Remove SQL "--" inline (not including \n) comments from file content
+    ## Remove SQL "--" inline (not including \n) comments
     while True:
         start=sql.find('--')
         if start == -1: break
