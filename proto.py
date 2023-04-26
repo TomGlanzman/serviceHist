@@ -80,7 +80,7 @@ def getSQLfromFile(filename):
 
 # Read command line options
 
-reportTypes = ['cc','mgmt','membership','pubboard']
+reportTypes = ['cc','mgmt','membership','pubboard','committees']
 
 parser = argparse.ArgumentParser(description='Create text reports based on DESC serviceHist database',
                                  usage='$ python3 xxxxx [options] {reportType}',
@@ -103,6 +103,8 @@ dbFile = args.file  # Name of sqlite3 database file containing serviceHist data
 tblfmt = 'psql'   # Used by tabulate to specify output format
 cols1="FirstName,LastName,GroupName,Role,RoleStart,RoleEnd"
 
+
+
 sql={'cc':f'select {cols1} from DevSummary where GroupID=1 order by RoleStart;',
      'membershipComm':f'select {cols1} from DevSummary where GroupID=7 order by RoleStart;'
      }
@@ -119,6 +121,11 @@ t=f'''
 
 con = sqlite3.connect(dbFile,timeout=30) ## connect to sqlite3 DB file
 cur = con.cursor()                       ## create a 'cursor'
+
+# Establish available groups
+sqlGrpAll='select * from desc_org_groups order by AUTHID,GROUPNAME;'
+sqlGrpDead='select * from desc_org_groups where GROUPEND != '' order by AUTHID,GROUPNAME;'
+sqlGrpCurrent='select * from desc_org_groups where GROUPEND = '' order by AUTHID,GROUPNAME;'
 
 
 
@@ -144,6 +151,18 @@ if repType == 'mgmt':
     
 elif repType == 'cc':
     print(f'cc report')
+    pass
+
+elif repType == 'membership':
+    print(f'Membership Committee')
+    pass
+
+elif repType == 'PubBoard':
+    print(f'pubboard')
+    pass
+
+elif repType == 'committees'
+    
 else:
     print(f'Unimplemented report type: {repType}')
     pass
