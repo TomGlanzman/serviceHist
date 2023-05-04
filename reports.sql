@@ -39,5 +39,47 @@
 .output schema.txt
 .schema
 
+
+
+
+.mode csv
+
+.output wg.csv
+.read wg.sql
+
+.output advisory.csv
+.read advisory.sql
+
+.output cc.csv
+.read cc.sql
+
+.output chairs.csv
+.read chairs.sql
+
+.output groups.csv
+.read groups.sql
+
+.output mgmt.csv
+.read mgmt.sql
+
+.output smallTables.csv
+.read smallTables.sql
+
+.output coords.csv
+.read coords.sql
+
+.output ombuds.csv
+.read ombuds.sql
+
+.output servers.csv
+.read servers.sql
+
+.output everyone.csv
+.read everyone.sql
+
+.output schema.csv
+.schema
+
+
 .output
 
