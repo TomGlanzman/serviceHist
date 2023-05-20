@@ -1,10 +1,10 @@
-/* mgmt.sql - print out DESC management team history */
+/* mgmt.sql - DESC management team history */
 --.trace stdout
 .print Complete history of DESC management team
 
 .print
 .print First Administration (one year)
-select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart < '2013-07-01' order by RoleID ; -- inline comment
+select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleStart < '2013-07-01' order by RoleID ;
 
 .print
 .print Second Administration
