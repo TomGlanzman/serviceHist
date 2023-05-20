@@ -21,9 +21,6 @@
 .output mgmt.txt
 .read mgmt.sql
 
-.output smallTables.txt
-.read smallTables.sql
-
 .output coords.txt
 .read coords.sql
 
@@ -35,6 +32,12 @@
 
 .output everyone.txt
 .read everyone.sql
+
+.output summary.txt
+.read summary.sql
+
+.output smallTables.txt
+.read smallTables.sql
 
 .output schema.txt
 .schema

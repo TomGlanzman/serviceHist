@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> <!- viewReports.html - view canned DESC service history reports -->
+  <head>
+  </head>
+
+  
+  <body>
+    <h2>DESC serviceHist Reports</h2>
+    <p>Welcome to the DESC service history repository</p>
+
+    <button type="button" onclick="showPreFile('groups')">All groups</button>
+    <button type="button" onclick="showPreFile('mgmt')">Mgmt</button>
+    <button type="button" onclick="showPreFile('cc')">CC</button>
+    <button type="button" onclick="showPreFile('com')">Membership Committee</button>
+    <button type="button" onclick="showPreFile('wg')">WG</button>
+    <button type="button" onclick="showPreFile('summary')">DB summary</button>
+
+    <pre id="preText"></pre>
+
+
+    <!--------------------------- FUNCTIONS --------------------------------->
+    <script src="viewReports.js"></script>
+  </body>
+
+</html> 
