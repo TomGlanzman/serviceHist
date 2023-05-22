@@ -1,37 +1,63 @@
-/* reports.sql - create a set of reports in text format */
+/* reports.sql - create a set of reports in text format for use by viewReports.html */
 
 .headers on
 .mode table
 
-.output wg.txt
-.read wg.sql
+.output mgmt.txt
+.read mgmt.sql
 
-.output advisory.txt
-.read advisory.sql
+.output mgmt-now.txt
+.read mgmt-now.sql
+--
 
 .output cc.txt
 .read cc.sql
 
-.output chairs.txt
-.read chairs.sql
-
-.output groups.txt
-.read groups.sql
-
-.output mgmt.txt
-.read mgmt.sql
-
-.output coords.txt
-.read coords.sql
+.output cc-now.txt
+.read cc-now.sql
+--
 
 .output ombuds.txt
 .read ombuds.sql
 
-.output servers.txt
-.read servers.sql
+.output ombuds-now.txt
+.read ombuds-now.sql
+--
+
+.output chairs.txt
+.read chairs.sql
+
+.output chairs-now.txt
+.read chairs-now.sql
+--
+
+.output wg.txt
+.read wg.sql
+
+.output wg-now.txt
+.read wg-now.sql
+--
+
+.output tt.txt
+.read tt.sql
+
+.output tt-now.txt
+.read tt-now.sql
+--
+
+.output tf.txt
+.read tf.sql
+
+.output tf-now.txt
+.read tf-now.sql
+--
 
 .output everyone.txt
 .read everyone.sql
+--
+
+.output groups.txt
+.read groups.sql
 
 .output summary.txt
 .read summary.sql
@@ -39,12 +65,16 @@
 .output smallTables.txt
 .read smallTables.sql
 
+.output servers.txt
+.read servers.sql
+
 .output schema.txt
 .schema
 
 
 
 
+/*
 .mode csv
 
 .output wg.csv
@@ -82,7 +112,7 @@
 
 .output schema.csv
 .schema
-
+*/
 
 .output
 

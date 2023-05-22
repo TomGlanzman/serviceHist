@@ -1,21 +1,22 @@
 /* groups.sql */
-.trace stdout
-.print All of the DESC-defined groups
+--.trace stdout
+.read cFormat.sql
+select "All of the DESC-defined groups as of ",date();
 
-.print
+.read tFormat.sql
 .print Management entities
-select * from desc_org_groups where GroupID < 100 order by GroupID;
+select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where GroupID < 100 order by GroupID;
 
 .print
 .print Working Groups
-select * from desc_org_groups where GroupID > 99 and GroupID < 200 order by GroupID;
+select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where GroupID between 100 and 199 order by GroupID;
 
 .print
 .print Topical Teams
-select * from desc_org_groups where GroupID > 199 and GroupID < 300 order by GroupID;
+select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where GroupID between 200 and 299 order by GroupID;
 
 .print
 .print Task Forces
-select * from desc_org_groups where GroupID > 299 and GroupID < 400 order by GroupID;
+select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where GroupID between 300 and 399 order by GroupID;
 
-.trace off
+--.trace off

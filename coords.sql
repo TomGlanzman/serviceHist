@@ -1,4 +1,4 @@
-/* coords.sql - print out history of each management coordinator role */
+/* coords.sql - history of each management coordinator role */
 .trace stdout
 .print Complete history of DESC Coordinator role
 .print

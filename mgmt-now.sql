@@ -1,12 +1,9 @@
-/* mgmt-now.sql - DESC management team  */
---.trace stdout
-.headers off
-.mode list
-.separator ""
+/* mgmt-now.sql - Current DESC management team  */
+
+.read cFormat.sql
 select "Current DESC management team as of ",date();
-.headers on
-.mode table
 
-select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from ManagementTeam where RoleEnd = '' order by RoleID ;
-
-.trace off
+.read tFormat.sql
+select FirstName,LastName,Role,GroupName,RoleStart,Notes from HistSummary
+       where RoleEnd = '' and GroupID in (20,21,22,23,24,25,26)
+       order by RoleID ;

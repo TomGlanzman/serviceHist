@@ -1,6 +1,9 @@
-/* ombuds.sql - print out table of DESC Ombuds */
-.trace stdout
-.print Complete history of DESC Ombuds
+/* ombuds.sql - DESC Ombuds */
+.read cFormat.sql
+select "Complete history of DESC Ombuds as of ",date();
 
-select FirstName,LastName,MEMIDNUM,Role,RoleID,GroupName,GroupID,RoleStart,RoleEnd from DevSummary where GroupID in (30) order by RoleStart,LastName;
-.trace off
+.read tFormat.sql
+select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd from HistSummary
+       where GroupID in (30)
+       order by RoleStart,LastName;
+

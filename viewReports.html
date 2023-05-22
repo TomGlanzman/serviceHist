@@ -7,14 +7,14 @@
   <body>
     <h2>DESC serviceHist Reports</h2>
     <p>Welcome to the DESC service history repository.  This database was created and is maintained by DESC Operations.</p>
-    Currently active:<br>
+    Currently active roles:<br>
     <button type="button" onclick="showPreFile('mgmt-now')">Mgmt</button>
     <button type="button" onclick="showPreFile('cc-now')">CC</button>
-    <button type="button" onclick="showPreFile('ombuds')">Ombuds</button>
-    <button type="button" onclick="showPreFile('chairs')">Committees,Boards,Bureaus</button>
-    <button type="button" onclick="showPreFile('wg')">Working Groups</button>
-    <button type="button" onclick="showPreFile('wg')">Topical Teams</button>
-    <button type="button" onclick="showPreFile('wg')">Task Forces</button>
+    <button type="button" onclick="showPreFile('ombuds-now')">Ombuds</button>
+    <button type="button" onclick="showPreFile('chairs-now')">Committees,Boards,Bureaus</button>
+    <button type="button" onclick="showPreFile('wg-now')">Working Groups</button>
+    <button type="button" onclick="showPreFile('tt-now')">Topical Teams</button>
+    <button type="button" onclick="showPreFile('tf-now')">Task Forces</button>
 <p>
     Full history<br>
     <button type="button" onclick="showPreFile('mgmt')">Mgmt</button>
@@ -22,8 +22,8 @@
     <button type="button" onclick="showPreFile('ombuds')">Ombuds</button>
     <button type="button" onclick="showPreFile('chairs')">Committees,Boards,Bureaus</button>
     <button type="button" onclick="showPreFile('wg')">Working Groups</button>
-    <button type="button" onclick="showPreFile('wg')">Topical Teams</button>
-    <button type="button" onclick="showPreFile('wg')">Task Forces</button>
+    <button type="button" onclick="showPreFile('tt')">Topical Teams</button>
+    <button type="button" onclick="showPreFile('tf')">Task Forces</button>
 <p>
     <button type="button" onclick="showPreFile('everyone')">Everyone</button> -  use this to extract a single person's service history (Long list, but it is in alphabetical order.)
 <p>
@@ -35,7 +35,7 @@
     <button type="button" onclick="showPreFile('schema')">DB schema</button>
 <br>
 
-    <pre id="preText"></pre>
+    <pre id="preText"></pre> 
 
 
     <!--------------------------- FUNCTIONS --------------------------------->

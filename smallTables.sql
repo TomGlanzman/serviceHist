@@ -1,6 +1,9 @@
 /* smallTables.sql */
 
-.print
+.read cFormat.sql
+select "Small tables used by the DESC serviceHist database as of ",date();
+
+.read tFormat.sql
 .print Table of defined roles
 select * from desc_org_roles order by roleID;
 

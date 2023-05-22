@@ -1,0 +1,11 @@
+/* tt-now.sql - Topical Team conveners */
+.read cFormat.sql
+select "Current topical team conveners as of ",date();
+
+.read tFormat.sql
+.print Topical Team Conveners
+select FirstName,LastName,GroupName,RoleStart,RoleEnd from HistSummary
+       where RoleID in (9)
+       and GroupID between 200 and 299
+       and RoleEnd = ''
+       order by GroupName,RoleStart,LastName;

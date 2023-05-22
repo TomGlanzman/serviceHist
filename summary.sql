@@ -1,7 +1,8 @@
-.headers off
-.mode list
-.separator ""
+/* summary.sql - DB statistical summary */
+
+.read cFormat.sql
 select "Summary of DESC serviceHistory database as of ",date();
-.headers on
-.mode box
-select groupname,count(*) from devsummary group by groupid order by count(*) desc limit 5; 
+
+.read tFormat.sql
+.print Number of serviceHistory records per group
+select groupname,count(*) from HistSummary group by groupid order by count(*) desc; 
