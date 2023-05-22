@@ -1,118 +1,75 @@
 /* reports.sql - create a set of reports in text format for use by viewReports.html */
 
-.headers on
-.mode table
+.read tFormat.sql
+.shell mkdir -p reports
 
-.output mgmt.txt
+.output reports/mgmt.txt
 .read mgmt.sql
 
-.output mgmt-now.txt
+.output reports/mgmt-now.txt
 .read mgmt-now.sql
 --
 
-.output cc.txt
+.output reports/cc.txt
 .read cc.sql
 
-.output cc-now.txt
+.output reports/cc-now.txt
 .read cc-now.sql
 --
 
-.output ombuds.txt
+.output reports/ombuds.txt
 .read ombuds.sql
 
-.output ombuds-now.txt
+.output reports/ombuds-now.txt
 .read ombuds-now.sql
 --
 
-.output chairs.txt
+.output reports/chairs.txt
 .read chairs.sql
 
-.output chairs-now.txt
+.output reports/chairs-now.txt
 .read chairs-now.sql
 --
 
-.output wg.txt
+.output reports/wg.txt
 .read wg.sql
 
-.output wg-now.txt
+.output reports/wg-now.txt
 .read wg-now.sql
 --
 
-.output tt.txt
+.output reports/tt.txt
 .read tt.sql
 
-.output tt-now.txt
+.output reports/tt-now.txt
 .read tt-now.sql
 --
 
-.output tf.txt
+.output reports/tf.txt
 .read tf.sql
 
-.output tf-now.txt
+.output reports/tf-now.txt
 .read tf-now.sql
 --
 
-.output everyone.txt
+.output reports/everyone.txt
 .read everyone.sql
 --
 
-.output groups.txt
+.output reports/groups.txt
 .read groups.sql
 
-.output summary.txt
+.output reports/summary.txt
 .read summary.sql
 
-.output smallTables.txt
+.output reports/smallTables.txt
 .read smallTables.sql
 
-.output servers.txt
+.output reports/servers.txt
 .read servers.sql
 
-.output schema.txt
+.output reports/schema.txt
 .schema
-
-
-
-
-/*
-.mode csv
-
-.output wg.csv
-.read wg.sql
-
-.output advisory.csv
-.read advisory.sql
-
-.output cc.csv
-.read cc.sql
-
-.output chairs.csv
-.read chairs.sql
-
-.output groups.csv
-.read groups.sql
-
-.output mgmt.csv
-.read mgmt.sql
-
-.output smallTables.csv
-.read smallTables.sql
-
-.output coords.csv
-.read coords.sql
-
-.output ombuds.csv
-.read ombuds.sql
-
-.output servers.csv
-.read servers.sql
-
-.output everyone.csv
-.read everyone.sql
-
-.output schema.csv
-.schema
-*/
 
 .output
 
