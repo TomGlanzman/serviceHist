@@ -4,4 +4,4 @@
 select "Summary of DESC service roles per person as of ",date();
 
 .read tFormat.sql
-select FirstName,LastName,count(MEMIDNUM) from HistSummary group by MEMIDNUM order by count(MEMIDNUM) desc, LastName asc;
+select FirstName,LastName,count(MEMIDNUM) as '# service roles' from HistSummary group by MEMIDNUM order by count(MEMIDNUM) desc, LastName asc;
