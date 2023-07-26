@@ -22,7 +22,7 @@ select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd from HistSummary
 --
 .print ================================================================================================
 .print
-.print Complete history of full committee membership (sorted by name)
+.print Complete history of full committee membership (sorted by group)
 select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd from HistSummary
        where GroupID between 2 and 19
        or GroupID between 50 and 100
