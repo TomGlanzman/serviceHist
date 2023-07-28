@@ -59,6 +59,9 @@
 .output reports/groups.txt
 .read groups.sql
 
+.output reports/groups-now.txt
+.read groups-now.sql
+
 .output reports/summary.txt
 .read summary.sql
 
