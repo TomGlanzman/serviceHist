@@ -1,7 +1,9 @@
+MEMIDNUM,FIRSTNAME,LASTNAME
 9344,Jelle,Aalbers
 748,Alexandra,Abate
 1911,Filipe,Abdalla
 14805,Abdurro'uf,Abdurro'uf
+28816,Katsuya,Abe
 2304,Tom,Abel
 2873,Emmanuel,Abela
 3233,Babak,Abi
@@ -34,6 +36,7 @@
 1486,H. Metin,Aktulga
 3837,Soud,Al Kharusi
 21990,Raiyah,Al Serkal
+28836,Alexandre,Alabora
 16283,Karla,Alamo-Martinez
 8162,Alex,Alarcon Gonzalez
 865,Joshua,Albert
@@ -47,7 +50,6 @@
 3197,Sahar,Allam
 3636,Tarek,Allam
 1333,Lazarus,Allan
-775,Steven,Allen
 24051,Henrique,Almeida
 2318,Ibrahim,Almosallam
 3297,Husni,Almoubayyed
@@ -165,7 +167,6 @@
 2321,Pierre,Barrillon
 16182,Eduardo,Barroso
 16183,Eduardo,Barroso
-9318,Michael,Barth
 3092,Ben,Bartlett
 795,James,Bartlett
 11429,Gabriel,Bartosch Caminha
@@ -245,6 +246,7 @@
 340,Joanne,Bogart
 16343,Boris,Bolliet
 23931,Clecio,Bom
+28952,Ana,Bonaca
 2551,Ana,Bonato
 686,Joshua,Bonatt
 2208,Tim,Bond
@@ -262,6 +264,7 @@
 928,Dominique,Boutigny
 3081,Rob,Bovill
 1014,Gordon,Bowden
+28852,Haley,Bowden
 3295,Boyd,Bowdish
 1015,Melissa,Bowersock
 634,Sergey,Boyarinov
@@ -321,6 +324,7 @@
 1482,Suren,Byna
 9337,Joyce,Byun
 17461,David,Cabrera
+28891,Tomas,Cabrera
 2859,Gianpietro,Cagnoli
 721,Robert,Cahn
 843,Benjamin,Cain
@@ -463,6 +467,7 @@
 4910,Yannick,Copin
 215,Alexandre,Coppens
 5383,Lauren,Corlies
+28971,Thomas,Cornish
 5140,Matteo,Costanzi
 1895,Michael,Coughlin
 5050,William,Coulton
@@ -495,6 +500,9 @@
 25686,Biwei,Dai
 1775,Mi,Dai
 758,Neal,Dalal
+28961,Nihar,Dalal
+28962,Nihar,Dalal
+28963,Nihar,Dalal
 14725,Roohi,Dalal
 5118,Massimo,Dall'Ora
 3764,Niccolo,Dalmasso
@@ -546,6 +554,7 @@
 4759,Vasiliy,Demchenko
 16432,Erik,Dennihy
 20555,Erik,Dennihy
+28817,Stephanie,Deppe
 1635,Anthony,Der Mesrobian-Kabakian
 9349,Laurent,Derome
 67,Ralph,Devoe
@@ -587,6 +596,7 @@
 1189,Angelo,Dragone
 3073,Nandor,Dressnandt
 2637,Alex,Drlica-Wagner
+28834,Adriana,Dropulic
 2962,Danh,Du
 1920,Wei,Du
 3732,Zilong,Du
@@ -647,6 +657,7 @@
 81,William,Fairbank
 9360,Hsin,Fan
 3723,Xiao,Fang
+28854,Kevin,Fanning
 867,Shereen,Farahani
 4801,Arya,Farahi
 24193,Amin,Farhang
@@ -869,6 +880,7 @@
 1870,Mario,Hamuy
 5371,Jared,Hand
 16286,Qianjun,Hang
+28813,Derek,Hansen
 2804,Erin,Hansen
 10402,Corentin,Hanser
 640,Per,Hansson
@@ -1023,6 +1035,7 @@
 2564,Suzanne,Jacoby
 3365,Andrew,Jaffe
 10391,Yesukhei,Jagvaral
+28972,Luisa G.,Jaime
 688,Bhuvnesh,Jain
 21972,Priyanka,Jalan
 2625,Ako,Jamil
@@ -1062,6 +1075,7 @@
 619,Sereres,Johnston
 3111,Cole,Jones
 3385,David,Jones
+28833,Deric,Jones
 14798,Evan,Jones
 900,Lynne,Jones
 17490,Lynne,Jones
@@ -1084,6 +1098,7 @@
 1910,J. Bryce,Kalmbach
 2159,Sowmya,Kamath
 16285,Gladys Muthoni,Kamau
+28791,Murali,Kandlagunta
 20552,Yijung,Kang
 27274,Yijung,Kang
 5369,Arun,Kannawadi
@@ -1097,6 +1112,7 @@
 1590,Ricardo,Kau
 3597,Ilana,Kaufman
 109,Lisa ,Kaufman
+28912,Simran,Kaur
 2916,Sugata,Kaviraj
 2254,Traci,Kawakami
 3133,Scott,Kay
@@ -1171,6 +1187,7 @@
 2229,Arthur,Kosowsky
 1056,Ivan,Kotov
 12610,Nick,Koukoufilippas
+28991,Michael,Kovac
 3387,Andras,Kovacs
 854,Eve,Kovacs
 33,Alexei,Kovalenko
@@ -1188,6 +1205,7 @@
 1237,Karl,Krughoff
 9306,Katarzyna,Krzyzanska
 1059,John,Ku
+28964,Carlos Alejandro,Ku-Maldonado
 1345,Petr,Kubanek
 19110,Jeremy,Kubica
 10412,Andrew,Kubik
@@ -1261,6 +1279,7 @@
 3813,Brian,Lenardo
 3548,Daniel,Lenz
 76,Richardo,Leon
+28871,Luis Manuel,Leon-Anaya
 3105,Danielle,Leonard
 24,Doug,Leonard
 330,Francois,Leonard
@@ -1282,6 +1301,7 @@
 2925,Ting,Li
 16428,Xiangchong,Li
 16429,Xiangchong,Li
+28835,Xinyue,Li
 622,Xu,Li
 3546,Zepeng,Li
 5040,Zhiyao,Li
@@ -1317,6 +1337,8 @@
 9351,Runjing,Liu
 5147,Shu,Liu
 21850,Yan,Liu
+28955,Yichen,Liu
+28956,Yichen,Liu
 1876,Zongge,Liu
 3639,Carson,Lloyd
 10390,Kenny,Lo
@@ -1340,6 +1362,7 @@
 3015,Marilena,Loverde
 2317,Wei,Lu
 514,Mark,Lubin
+28973,William,Lucas
 551,Steffen,Luitz
 3815,Steffen,Luitz
 1318,Zarija,Lukic
@@ -1353,6 +1376,7 @@
 5062,Yin-Zhe,Ma
 896,Zhaoming,Ma
 9321,Karime,Maamari
+28911,Sean,MacBride
 3579,Niall,MacCrann
 1515,David,MacFarlane
 144,Ryan,MacLellan
@@ -1380,6 +1404,7 @@
 3860,Kirsten Marie,Manahan
 3260,Kaisey,Mandel
 702,Rachel,Mandelbaum
+28953,Marc,Manera
 3550,Bob,Mann
 6400,Timothy Andrew,Manning
 1480,Owen,Mannion
@@ -1393,6 +1418,7 @@
 310,Michael,Marino
 2369,Thomas,Markiewicz
 3211,Thomas,Markiewicz
+28975,David Rogelio,Marquez Castillo
 7880,Valerio,Marra
 1073,Darren,Marsh
 5366,Jennifer,Marshall
@@ -1593,6 +1619,7 @@
 16306,Titus Nyarko,Nde
 16307,Titus Nyarko,Nde
 553,Homer,Neal
+28951,Lina,Necib
 21856,Salvador,Negrete
 265,Wilkins,Neil
 3054,Douglas,Neill
@@ -1610,6 +1637,7 @@
 745,Jeffrey,Newman
 783,Mark,Neyrinck
 2100,Karen,Ng
+28851,Tri,Nguyen
 2546,Bob,Nichol
 22070,Renee,Nichols
 23891,Renee,Nichols
@@ -1704,6 +1732,8 @@
 20515,Shubham,Pandey
 1087,Jim,Panetta
 21854,Ziteng,Pang
+28892,Nondh,Panithanpaisal
+28872,Maurizio,Paolillo
 3780,Kris,Pardo
 2767,John,Parejko
 24253,Camille,Parisel
@@ -1721,7 +1751,10 @@
 2924,Samuel,Passaglia
 573,Christopher,Passolano
 24091,Erick,Pasten
+28837,Aakash,Patel
 3100,Manisha,Patel
+28814,Sawan,Patel
+28815,Sawan,Patel
 1320,Marc,Paterno
 268,Chuck,Patterson
 4903,Nicoleta,Pauna
@@ -1735,6 +1768,7 @@
 3242,Eske,Pedersen
 3049,Peter,Pedersen
 2875,Joshua,Peek
+28853,Rutong,Pei
 1879,Hiranya,Peiris
 3796,Julien,Peloton
 24074,Hannah,Peltz Smalley
@@ -1753,6 +1787,7 @@
 16342,Mihael,Petac
 8141,Annika,Peter
 3108,Tina,Peters
+28831,Erik,Peterson
 832,John,Peterson
 3241,Thomas,Peterson
 2542,Donald,Petravick
@@ -1806,6 +1841,8 @@
 3730,Lucas,Porth
 3571,Taylor,Pospisil
 3445,Bhishan,Poudel
+28931,Sagar,Poudel
+28932,Sagar,Poudel
 2954,Alkistis,Pourtsidou
 4575,Austin,Powell
 1808,Jacob,Powers
@@ -1877,6 +1914,7 @@
 827,Kevin,Reil
 2622,Mike,Reilly
 14790,Thomas,Reiprich
+28974,Robert,Reischke
 2668,David,Reiss
 3053,Matt,Rempel
 10387,Benjamin,Remy
@@ -1931,8 +1969,8 @@
 4612,Steve,Rodney
 3794,Joao,Rodrigues
 21932,Facundo,Rodriguez
+9314,Martin,Rodriguez Monroy
 8067,Mario A.,Rodriguez-Meza
-9314,Martin,Rodriguez-Monroy
 16402,Agustin,Rodr?-A-guez Medrano
 727,Natalie,Roe
 1100,Howard,Rogers
@@ -1997,6 +2035,7 @@
 2380,Lupe,Salgado
 555,Andrei,Salnikov
 17658,Laura,Salo
+28959,Mara,Salvato
 21976,Sofia del Pilar,Samario Nava
 4597,Hillysson,Sampaio-Santos
 2326,Simon,Samuroff
@@ -2066,6 +2105,7 @@
 8244,Scott,Scott
 1103,Jacques,Sebag
 3206,Lucas,Secco
+28832,Nima,Sedaghat
 23936,Aidan,Sedgewick
 770,Neelima,Sehgal
 2138,Saba,Sehrish
@@ -2125,6 +2165,7 @@
 3397,Nora,Shipp
 834,Ian,Shipsey
 3614,Raphael,Shirley
+28960,Raphael,Shirley
 17672,Samyak,Shrestha
 12512,Yiping,Shu
 16433,Alysha,Shugart
@@ -2203,6 +2244,7 @@
 16221,Sankarshana,Srinivasan
 3632,Brian,Stalder
 1323,Marcel,Stanitski
+28957,Nathaniel,Starkman
 3856,Noel,Stasiak
 3861,Noel,Stasiak
 14744,Keivan,Stassun
@@ -2220,6 +2262,7 @@
 45,Vance,Strickland
 2368,Jan,Strube
 711,Christopher,Stubbs
+28958,Sunao,Sugiyama
 2685,Ian,Sullivan
 16041,James,Sullivan
 2808,Mark,Sullivan
@@ -2264,6 +2307,7 @@
 9329,WeiLeong,Tee
 21852,Raul,Teixeira
 2106,Ananth,Tenneti
+28812,Zhixiang,Teoh
 20454,Ryo,Terasawa
 2004,Diego,Terront
 1115,Stephen,Tether
@@ -2300,6 +2344,7 @@
 1118,Daniel,Tompkins
 7884,Stephen,Tomsky
 20452,Andrii,Torchylo
+28976,Laura,Toribio San Cipriano
 649,Natalia,Toro
 16288,Luca,Tortorelli
 494,Delia,Tosi
@@ -2463,6 +2508,7 @@
 3284,Hannah,Wilensky
 3818,Reese,Wilkinson
 17656,Andressa,Wille
+28771,Carter,Williams
 3797,Ernest,Williams
 3134,Steven,Williams
 3245,Beth,Willman
@@ -2503,6 +2549,7 @@
 3799,Hao-Yi,Wu
 1483,John,Wu
 3423,Shuoxing,Wu
+28893,Sili,Wu
 23972,Tianrui,Wu
 3599,Xiuqin,Wu
 72,H. Wells,Wulsin
@@ -2523,6 +2570,7 @@
 17470,Ziang,Yan
 107,Liang,Yang
 836,Giraud-Heraud,Yannick
+9318,Michael James,Yantovski-Barth
 2559,Ji,Yao
 23953,Joseph,Yared
 4943,Manal,Yassine
@@ -2543,6 +2591,7 @@
 3644,Lydia,Young
 3747,To Chin,Yu
 6460,Weixiang,Yu
+28755,Sihan,Yuan
 11427,Adam,Zadrozny
 12550,Gabrijela,Zaharijas
 932,Yubin,Zaho
@@ -2604,10 +2653,12 @@
 23875,Axel,de la Macorra
 8121,Martin,de los Rios
 23874,Vinicius,dos Santos Bessa Ribeiro
+28811,jiawen,fan
 3553,Dominique,fouchez
 3865,ranpal,gill
 3878,gpc1,gpc1
 2212,hpscat,hpscat
+775,Steven,https://profiles.stanford.edu/steven-allen
 2930,Igor,kravtsov
 27275,JC,lazarte
 1869,lsstcam-user,lsstcam-user
