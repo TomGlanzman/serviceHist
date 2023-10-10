@@ -1,4 +1,3 @@
-MEMIDNUM,FIRSTNAME,LASTNAME
 9344,Jelle,Aalbers
 748,Alexandra,Abate
 1911,Filipe,Abdalla
