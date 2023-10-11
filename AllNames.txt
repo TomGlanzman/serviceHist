@@ -49,6 +49,7 @@
 3197,Sahar,Allam
 3636,Tarek,Allam
 1333,Lazarus,Allan
+775,Steven,Allen
 24051,Henrique,Almeida
 2318,Ibrahim,Almosallam
 3297,Husni,Almoubayyed
@@ -274,6 +275,7 @@
 4763,Christopher,Bradshaw
 17630,Gerhard,Braeunlich
 653,Daniel,Brandt
+28992,Juan Pablo,Brandt Urenda
 22191,Doug,Branton
 1342,Mary,Brathwaite
 1324,James,Brau
@@ -853,7 +855,7 @@
 723,Julien,Guy
 21859,Julien,Guy
 3876,Leanne,Guy
-3781,L??anne,Guy
+3781,LÃ©anne,Guy
 23971,Maya,Guy
 1338,Augustin,Guyonnet
 3587,Lucas,Guzman
@@ -1970,7 +1972,7 @@
 21932,Facundo,Rodriguez
 9314,Martin,Rodriguez Monroy
 8067,Mario A.,Rodriguez-Meza
-16402,Agustin,Rodr?-A-guez Medrano
+16402,Agustin,RodrÃ­Â­guez Medrano
 727,Natalie,Roe
 1100,Howard,Rogers
 23916,Keir,Rogers
@@ -2032,6 +2034,7 @@
 21816,Yoquelbin,Salcedo Hernandez
 3451,Muhammad,Saleem
 2380,Lupe,Salgado
+28993,Gregory,Sallaberry
 555,Andrei,Salnikov
 17658,Laura,Salo
 28959,Mara,Salvato
@@ -2657,7 +2660,6 @@
 3865,ranpal,gill
 3878,gpc1,gpc1
 2212,hpscat,hpscat
-775,Steven,https://profiles.stanford.edu/steven-allen
 2930,Igor,kravtsov
 27275,JC,lazarte
 1869,lsstcam-user,lsstcam-user
@@ -2668,7 +2670,7 @@
 5374,test_first,test_last
 7922,test_first,test_last
 2461,Edo,van Uitert
-17510,Bj??rn,van Zwol
+17510,BjÃ¶rn,van Zwol
 14793,Jan Luca,van den Busch
 16022,Sebastian,von Hausegger
 4615,Belina,von Krosigk
