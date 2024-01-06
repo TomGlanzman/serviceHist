@@ -4,7 +4,7 @@ select "Current topical team conveners as of ",date();
 
 .read tFormat.sql
 .print Topical Team Conveners
-select FirstName,LastName,GroupName,RoleStart,RoleEnd from HistSummary
+select FirstName,LastName,GroupName,RoleStart from HistSummary
        where RoleID in (9)
        and GroupID between 200 and 299
        and RoleEnd = ''
