@@ -4,6 +4,8 @@ Note: this repository is intended only to create an initial database, not to mai
 
 --> July 2023 - For the moment, the serviceHist database is being maintained via the technique used by this repo, i.e., change the "fill*.sql" files and remake the database when there are changes.
 
+Hint: use the ".headers on" and ".mode table" to more easily view sqlite3 output
+
 --> 4 Jan 2024 - Currently the serviceHist database and report update workflow looks like this:
 
      * serviceHist repo (working copy) is stored in
