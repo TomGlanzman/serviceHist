@@ -1,6 +1,6 @@
 /* tt-now.sql - Topical Team conveners */
 .read cFormat.sql
-select "Current topical team conveners as of ",date();
+select "Current topical team conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Topical Team Conveners

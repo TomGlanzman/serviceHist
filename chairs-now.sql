@@ -1,7 +1,7 @@
 /* chairs-now.sql */
 
 .read cFormat.sql
-select "Current active committee/board/bureau chairs/managers as of ",date();
+select "Current active committee/board/bureau chairs/managers as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print NOTE: some groups have not designated a chair/manager.

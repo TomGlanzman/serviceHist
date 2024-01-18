@@ -1,7 +1,7 @@
 /* mgmt.sql - DESC management team history */
 --.trace stdout
 .read cFormat.sql
-select "Complete history of DESC management team as of ",date();
+select "Complete history of DESC management team as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print

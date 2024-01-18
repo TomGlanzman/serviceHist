@@ -1,7 +1,7 @@
 /* tf.sql - Task Force conveners */
 
 .read cFormat.sql
-select "Complete history of task force conveners as of ",date();
+select "Complete history of task force conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Task Force Conveners

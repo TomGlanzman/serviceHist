@@ -1,7 +1,7 @@
 /* groups.sql */
 --.trace stdout
 .read cFormat.sql
-select "All active DESC-defined groups as of ",date();
+select "All active DESC-defined groups as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Management entities

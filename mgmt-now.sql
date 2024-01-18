@@ -1,7 +1,7 @@
 /* mgmt-now.sql - Current DESC management team  */
 
 .read cFormat.sql
-select "Current DESC management team as of ",date();
+select "Current DESC management team as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 select FirstName,LastName,Role,GroupName,RoleStart,Notes from HistSummary

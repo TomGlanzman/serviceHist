@@ -1,6 +1,6 @@
 /* tt.sql - Topical Team conveners */
 .read cFormat.sql
-select "Complete history of topical team conveners as of ",date();
+select "Complete history of topical team conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Topical Team Conveners

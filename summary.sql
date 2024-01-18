@@ -1,7 +1,7 @@
 /* summary.sql - DB statistical summary */
 
 .read cFormat.sql
-select "Summary of DESC serviceHistory database as of ",date();
+select "Summary of DESC serviceHistory database as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Number of serviceHistory records per group

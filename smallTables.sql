@@ -1,7 +1,7 @@
 /* smallTables.sql */
 
 .read cFormat.sql
-select "Small tables used by the DESC serviceHist database as of ",date();
+select "Small tables used by the DESC serviceHist database as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Table of defined roles

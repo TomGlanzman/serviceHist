@@ -1,7 +1,7 @@
 /* cc.sql - print out CC membership by election cycle */
 --.trace stdout
 .read cFormat.sql
-select "Complete history of DESC Collaboration Council as of ",date();
+select "Complete history of DESC Collaboration Council as of ",date(datetime(),'localtime');
 .read tFormat.sql
 
 .print

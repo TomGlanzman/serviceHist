@@ -1,7 +1,7 @@
 /* wg.sql - Working Group conveners */
 
 .read cFormat.sql
-select "Complete history of workingGroup conveners as of ",date();
+select "Complete history of workingGroup conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Working Group Conveners (ordered by name)

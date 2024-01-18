@@ -1,7 +1,7 @@
 /* chairs.sql */
 
 .read cFormat.sql
-select "Current and Past Chairs and Membership of Committees, Boards, & Bureaus as of ",date();
+select "Current and Past Chairs and Membership of Committees, Boards, & Bureaus as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print NOTE: some groups have not designated a chair/manager.

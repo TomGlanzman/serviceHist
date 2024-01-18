@@ -1,7 +1,7 @@
 /* wg-now.sql - Current Working Group conveners */
 
 .read cFormat.sql
-select "Current workingGroup conveners as of ",date();
+select "Current workingGroup conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Working Group Conveners (ordered by group)

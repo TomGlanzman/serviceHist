@@ -1,7 +1,7 @@
 /* tf-now.sql - Task Force conveners */
 
 .read cFormat.sql
-select "Current task force conveners as of ",date();
+select "Current task force conveners as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
 .print Task Force Conveners
