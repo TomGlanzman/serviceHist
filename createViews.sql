@@ -15,10 +15,11 @@ CREATE VIEW HistSummary(FirstName,LastName,MEMIDNUM,GroupName,GroupID,Role,RoleI
 
 -- GroupSummary is the primary way to view the defined groups within the DESC
 DROP VIEW IF EXISTS GroupSummary;
-CREATE VIEW GroupSummary(GroupName,GroupAbbrv,GroupID,GroupStart,GroupEnd,AuthID,AuthGrp,notes)
+CREATE VIEW GroupSummary(GroupName,GroupAbbrv,GroupID,GroupStart,GroupEnd,AuthID,AuthGrp,HostGrpID,HostGrpAbbr,notes)
        AS
-       select G.GROUPNAME,G.GROUPABBRV,G.GROUPID,G.GROUPSTART,G.GROUPEND,A.AUTHID,A.AUTHNAME,G.NOTES from DESC_ORG_GROUPS G
+       select G.GROUPNAME,G.GROUPABBRV,G.GROUPID,G.GROUPSTART,G.GROUPEND,A.AUTHID,A.AUTHNAME,G.HOSTGRPID,X.GROUPABBRV,G.NOTES from DESC_ORG_GROUPS G
    	      join DESC_ORG_AUTHORITIES A on (G.AUTHID=A.AUTHID)
+	      left outer join DESC_ORG_GROUPS X on (G.HOSTGRPID=X.GROUPID)
 	      order by A.AUTHID,G.GROUPSTART;
 
 

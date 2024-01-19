@@ -25,7 +25,7 @@ select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where
 
 .print
 .print Topical Teams
-select GROUPNAME,GROUPABBRV,GROUPSTART,GROUPEND,NOTES from desc_org_groups where GroupStart != '' and GroupEnd = '' and  GroupID between 200 and 299 order by GroupStart;
+select GROUPNAME,GROUPABBRV,HOSTGRPABBR,GROUPSTART,GROUPEND,NOTES from GroupSummary where GroupStart != '' and GroupEnd = '' and  GroupID between 200 and 299 order by GroupStart;
 
 .print
 .print Task Forces
