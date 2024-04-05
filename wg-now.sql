@@ -8,6 +8,7 @@ select "Current workingGroup conveners as of ",date(datetime(),'localtime');
 select FirstName,LastName,GroupName,RoleStart from HistSummary
        where RoleID in (9)
        and GroupID between 100 and 199
-       and RoleEnd = ''
+       and ( RoleEnd = '' or RoleEnd > date() )
+       and RoleStart <= date()
        order by GroupName,RoleStart,LastName;
        

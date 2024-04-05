@@ -8,5 +8,6 @@ select "Current task force conveners as of ",date(datetime(),'localtime');
 select FirstName,LastName,GroupName,RoleStart,RoleEnd from HistSummary
        where RoleID in (9)
        and GroupID between 300 and 399
-       and RoleEnd = ''
+       and ( RoleEnd = '' or RoleEnd > date() )
+       and RoleStart <= date()
        order by GroupName,RoleStart,LastName;
