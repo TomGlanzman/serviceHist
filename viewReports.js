@@ -2,6 +2,7 @@
 
 function showPreFile(name){
     document.getElementById('preText').innerHTML = null;
+//    document.getElementById('preErr').innerHTML = null;
     let file = new XMLHttpRequest();
     txtFilename=name+'.txt'
     console.log('preFilename = ' + txtFilename);
@@ -12,5 +13,14 @@ function showPreFile(name){
 	    document.getElementById('preText').textContent = this.responseText;
         }
     };
+
+//    const url = getCurrentURL();
+//    document.getElementById('preErr').textContent = url; 
+
+}
+
+/* Return the current page's URL */
+function getCurrentURL(){
+    return window.location.href
 }
 
