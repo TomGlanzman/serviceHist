@@ -43,3 +43,7 @@ select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummar
 .print
 .print Tenth election cycle 2023 
 select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummary where GroupID=1 and RoleStart < '2024-06-30' and RoleStart > '2023-07-01' order by RoleID,RoleStart,Role,LastName;
+
+.print
+.print Eleventh election cycle 2024 
+select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummary where GroupID=1 and RoleStart < '2025-06-30' and RoleStart > '2024-07-01' order by RoleID,RoleStart,Role,LastName;
