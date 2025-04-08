@@ -9,4 +9,4 @@ select FirstName,LastName,Role,GroupName,RoleStart,Notes
        where ( RoleEnd = '' or RoleEnd > date() )
        and RoleStart <= date()
        and GroupID in (20,21,22,23,24,25,26)
-       order by RoleID ;
+       order by GroupID,RoleID ;
