@@ -21,8 +21,8 @@ CREATE TABLE
         LASTNAME   VARCHAR2(50) NOT NULL 
     );
 
---.mode csv  changed to "tabs" 3/21/2024 to accommodate new file format
-.mode tabs
+.mode csv
+--.mode tabs
 .import ./AllNames.txt UM_MEMBER
 .mode table
 .headers on
