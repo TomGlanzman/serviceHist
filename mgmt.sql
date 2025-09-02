@@ -48,7 +48,7 @@ select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from HistSummar
 
 
 .print
-.print Eighth Administration (Dates of office now extend from 1-Oct to 30-Sep two years hence)
+.print Eighth Administration (Dates of office now extend from 1-Oct through 30-Sep two years hence)
 select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from HistSummary
        where RoleStart > '2025-09-30' and RoleStart < '2027-10-01' and GroupID in (20,21,22,23,24,25,26)
        order by GroupID,RoleID ;
