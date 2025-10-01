@@ -17,7 +17,7 @@ select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from HistSummar
 select GroupName,FirstName,LastName,Role,RoleStart,RoleEnd,Notes from HistSummary
        where RoleID in (5,6,10,15)
        and ((GroupID between 2 and 19) or (GroupID between 50 and 100))
-       order by GroupName,RoleStart,LastName;
+       order by GroupName,RoleStart,Notes,LastName;
 
 --
 .print ================================================================================================
@@ -26,5 +26,5 @@ select GroupName,FirstName,LastName,Role,RoleStart,RoleEnd,Notes from HistSummar
 select GroupName,FirstName,LastName,Role,RoleStart,RoleEnd,Notes from HistSummary
        where (GroupID between 2 and 19)
        or (GroupID between 50 and 100)
-       order by GroupName,RoleStart,LastName;
+       order by GroupName,RoleStart,Notes,LastName;
 

@@ -11,7 +11,7 @@ select FirstName,LastName,Role,GroupName,RoleStart,notes from HistSummary
        and GroupID != 1 and GroupID != 25
        and ( RoleEnd = '' or RoleEnd > date() )
        and RoleStart <= date()
-       order by GroupName,LastName;
+       order by GroupName,notes,LastName;
 
 --
 .print ================================================================================================
@@ -21,5 +21,5 @@ select FirstName,LastName,Role,GroupName,RoleStart,notes from HistSummary
        where (GroupID between 2 and 19 or GroupID between 50 and 100)
        and ( RoleEnd = '' or RoleEnd > date() )
        and RoleStart <= date()
-       order by GroupID,LastName;
+       order by GroupID,notes,LastName;
 
