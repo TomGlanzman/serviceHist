@@ -4,7 +4,7 @@
 select "Current active committee/board/bureau chairs/managers as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
-.print NOTE: some groups have not designated a chair/manager.
+.print NOTE: some groups may have not designated a chair/manager.
 .print Current chairs/managers
 select FirstName,LastName,Role,GroupName,RoleStart,notes from HistSummary
        where RoleID in (5,6,10,15)

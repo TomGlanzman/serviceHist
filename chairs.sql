@@ -4,7 +4,7 @@
 select "Current and Past Chairs and Membership of Committees, Boards, & Bureaus as of ",date(datetime(),'localtime');
 
 .read tFormat.sql
-.print NOTE: some groups have not designated a chair/manager.
+.print NOTE: some groups may have not designated a chair/manager.
 .print Complete history of committee chairs (sorted by name)
 select FirstName,LastName,Role,GroupName,RoleStart,RoleEnd,Notes from HistSummary
        where RoleID in (5,6,10,15)
