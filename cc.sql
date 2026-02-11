@@ -47,3 +47,7 @@ select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummar
 .print
 .print Eleventh election cycle 2024 
 select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummary where GroupID=1 and RoleStart < '2025-06-30' and RoleStart > '2024-07-01' order by RoleID,RoleStart,Role,LastName;
+
+.print
+.print Twelfth election cycle 2025 
+select FirstName,LastName,GroupName,Role,RoleStart,RoleEnd,notes from HistSummary where GroupID=1 and RoleStart < '2026-06-30' and RoleStart > '2025-07-01' order by RoleID,RoleStart,Role,LastName;
