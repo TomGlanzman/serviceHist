@@ -5,10 +5,10 @@
 		  Success assumes that you already have a DbVisualizer
 		  profile established that contains the credentials to
 		  access the DESC Oracle database.
-
 */
 @export on;
 @export set filename="./AllNames.txt" appendfile="clear" CsvIncludeColumnHeader=false CsvColumnDelimiter=",";
+alter session set current_schema = CONFIG;
 select distinct M.MEMIDNUM, M.FIRSTNAME, M.LASTNAME from UM_MEMBER M
         join UM_PROJECT_MEMBERS PM on (M.MEMIDNUM=PM.MEMIDNUM)
 	order by M.LASTNAME;
